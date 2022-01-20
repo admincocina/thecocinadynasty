@@ -273,12 +273,12 @@
 									</div>
 									
 								</div> -->
-								<!--<div class="input-group">
-									<input type="email" name="email" id="email" placeholder="Email" class="form-control">
-								</div>-->
 								<!-- <div class="input-group">
-									<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+									<input type="email" name="email" id="email" placeholder="Email" class="form-control">
 								</div> -->
+								<div class="input-group">
+									<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+								</div>
 								<div class="input-group">
 									<input type="submit" id="form-submit" class="pull-right" value="Send message">
 								</div>
@@ -336,8 +336,8 @@
 		<!-- jquery.appear -->
         <script src="js/jquery.appear.js"></script>
 		<!-- Contact form validation -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 		<!-- Google Map -->
 		<!-- jquery easing -->
         <script src="js/jquery.easing.min.js"></script>
@@ -366,17 +366,11 @@
 				$('#contact-form').validate({
 					rules: {
 						
-						email: {
-							required: true,
-							email: true
-						},
 						
 					},
 					messages: {
 						
-						email: {
-							required: "no email, no message"
-						},
+						
 					
 					},
 					submitHandler: function(form) {
@@ -398,7 +392,6 @@
 						// 		});
 						// 	}
 						// });
-						
 						window.open("mailto:support@thecocinadynasty.in");
 					}
 				});
